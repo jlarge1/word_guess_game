@@ -1,0 +1,145 @@
+@keyframes letterspace{
+    from {letter-spacing: 5px; margin-right: auto;}
+    to {letter-spacing: 20px; margin-right: -2em;}
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.title {
+    font-family: 'Slabo 13px', serif;
+    font-size: 6vw;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.title2 {
+    color: #1BA333;
+    font-family: 'Slabo 13px', serif;
+    font-size: 3vw;
+    font-weight: 800;
+    width: 100%;
+    text-align: center;
+    -webkit-animation: letterspace 4s;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+    animation: letterspace 4s;
+    animation-fill-mode: forwards;
+}
+
+h1 {
+    font-family: 'Slabo 13px', serif;
+    font-size: 8vw;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Slabo 13px', serif;
+    font-size: 2vw;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#setup {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.letter {
+    display: inline-block;
+    margin-right: 10px;
+    font-family: 'Slabo 13px', serif;
+    font-size: 3vw;
+    width: 1.5vw;
+}
+
+
+#guessedLetters {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5vw;
+    line-height: 3vw;
+    letter-spacing: 5px;
+    font-weight: 800;
+    color: #333;
+    word-wrap: normal;
+    margin-bottom: 20px,
+
+}
+
+#wrongGuess, #conversation {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5vw;
+    line-height: 3vw;
+    color: #333;
+    word-wrap: normal;
+    margin: 20px 0px,
+}
+
+.container {
+    width: 100%;
+    margin: 30px;
+}
+
+.content {
+    background: #fcfcfc;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.row {
+    margin-bottom: 30px;
+}
+
+[class*="col-"] {
+    float: left;
+    position: relative;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* for phone only */
+@media screen and (max-width: 599px) {
+
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+/* for tablet portrait and up */
+@media screen and (max-width: 600px) {
+
+}
+
+/* for tablet landscape and up*/
+@media screen and (max-width: 900px) {
+
+}
+
+/* for desktop and up */
+@media screen and (max-width: 1200px) {
+
+}

@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <meta charset="UTF-8">
-        <title>Plant Hangman</title>
-        <link rel="stylesheet" src="assets/css/style.css">
-    </head>
-    <body>
-        <script src="assets/javascript/game.js"></script>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Plant Hangman</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Slabo+13px" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-3"> &nbsp; </div>
+            <div class="col-6 content">
+                <div class="title">Word Guess</div>
+                <div class="title2">Plant Edition</div>
+            </div>
+            <div class="col-3"> &nbsp; </div>
+        </div>
+
+        <div class="row">
+            <div class="col-3"> &nbsp; </div>
+            <div class="col-6 text-center content">
+                <div id="setup"></div>
+                <div id="conversation"></div>
+
+            </div>
+            <div class="col-3"> &nbsp; </div>
+        </div>
+
+        <div class="row">
+            <div class="col-3"> &nbsp; </div>
+            <div class="col-6 text-center content">
+                <div id="guessedLetters"></div>
+                <div id="wrongGuess"></div>
+            </div>
+            <div class="col-3"> &nbsp; </div>
+        </div>
+
+    </div>
+
+    <script src="assets/javascript/game.js"></script>
+</body>
+
 </html>
