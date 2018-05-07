@@ -49,13 +49,17 @@ h2 {
 #setup {
     text-align: center;
     margin-bottom: 20px;
+    background: #333;
+    padding: 10px;
 }
+
 .letter {
     display: inline-block;
     margin-right: 10px;
     font-family: 'Slabo 13px', serif;
     font-size: 3vw;
     width: 1.5vw;
+    color: #fcfcfc;
 }
 
 
@@ -67,7 +71,6 @@ h2 {
     font-weight: 800;
     color: #333;
     word-wrap: normal;
-    margin-bottom: 20px,
 
 }
 
@@ -77,25 +80,33 @@ h2 {
     line-height: 3vw;
     color: #333;
     word-wrap: normal;
-    margin: 20px 0px,
+    
 }
 
-.container {
-    width: 100%;
-    margin: 30px;
+
+.center {
+    background: #fcfcfc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    border:10px solid black;
 }
 
 .content {
-    background: #fcfcfc;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
 }
 
 .text-center {
     text-align: center;
+    margin-bottom: 20px;
 }
 
-.row {
-    margin-bottom: 30px;
-}
 
 [class*="col-"] {
     float: left;
@@ -123,7 +134,21 @@ h2 {
 
 /* for phone only */
 @media screen and (max-width: 599px) {
+    #wrongGuess, #conversation, #guessedLetters {
+        font-size: 2.5vw;
+        line-height: 3.75vw;
+    }
+    .letter {
+        font-size: 6vw;
+        width: 3vw;
+    }
+    .title {
+        font-size: 12vw;
+    }   
 
+    .title2 {
+        font-size: 6vw;
+    }
     [class*="col-"] {
         width: 100%;
     }
@@ -131,15 +156,53 @@ h2 {
 
 /* for tablet portrait and up */
 @media screen and (max-width: 600px) {
+    #wrongGuess, #conversation, #guessedLetters {
+        font-size: 2.5vw;
+        line-height: 3.75vw;
+    }
+    .letter {
+        font-size: 6vw;
+        width: 3vw;
+    }
+    .title {
+        font-size: 12vw;
+    }   
+
+    .title2 {
+        font-size: 6vw;
+    }
+
+    [class*="col-"] {
+        width: 100%;
+    }
 
 }
 
 /* for tablet landscape and up*/
 @media screen and (max-width: 900px) {
+    
+    #wrongGuess, #conversation, #guessedLetters {
+        font-size: 2.5vw;
+        line-height: 3.75vw;
+    }
+    .letter {
+        font-size: 6vw;
+        width: 3vw;
+    }
+    .title {
+        font-size: 12vw;
+    }   
 
+    .title2 {
+        font-size: 6vw;
+    }
+
+    [class*="col-"] {
+        width: 100%;
+    }
 }
 
 /* for desktop and up */
 @media screen and (max-width: 1200px) {
 
-}
+}   
