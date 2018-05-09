@@ -45,6 +45,8 @@ function wrongLetter() {
 
 function endGame() {
     docConversation.textContent = "You lost :(";
+    docGuesses.textContent = "";
+    docWrongGuess.textContent = "";
     revealWord();
 }
 
@@ -111,7 +113,6 @@ function initializeGame(word) {
             docWord.appendChild(letter);
         }
     }
-    docWrongGuess.textContent = "0/5 wrong guesses";
     return word;
 }
 
@@ -184,8 +185,6 @@ function main(x) {
             appendMatch(y);
             checkEnd(y);
         }
-        console.log("correct length: " + correct.length);
-        console.log("letterNum length: " + letterNum.length);
     }
 }
 
